@@ -236,7 +236,8 @@ observation, info = env.reset(seed=30)
 values, policy = mdp_algorithm(env)
 # Define the maximum number of iterations
 max_iter_number = 1000
-print(policy)
+for i in range(len(policy)):
+    print(i, ':', policy[i])
 print(env.P)
 next_state = 36
 counter = 0
